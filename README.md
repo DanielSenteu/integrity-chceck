@@ -12,15 +12,17 @@ npm run build    # sync partials/nav.html + partials/footer.html into every publ
 
 ## Structure
 ```
-public/            web root
+docs/              web root (GitHub Pages serves from main /docs)
   index.html       homepage (built; nav/footer synced from partials/)
   css/shared-site.css   design tokens + all styling (single source)
   js/main.js       reveals, hero line-mask, scroll-pinned process, count-ups, parallax, magnetic
   assets/logo-mark.svg  shield + bars + checkmark logo (animatable)
   images/ videos/  drop optimized stock + the Remotion hero loop here
+  .nojekyll        tells Pages to serve files as-is (no Jekyll build)
 partials/          nav.html, footer.html — single source for site chrome
 scripts/           build.js (chrome sync), serve.js (preview server)
 ```
+Deployed via GitHub Pages → **branch `main`, folder `/docs`**.
 
 ## Brand
 Navy `#0B1F3A` · Green `#1F7A63` (accent, ~5%) · Grey `#F4F6F8` · Silver `#B0B7C3`.
