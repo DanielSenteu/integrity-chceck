@@ -1,0 +1,12 @@
+{
+  "name": "integrity-check-website",
+  "version": "0.1.0",
+  "description": "Integrity Check Limited — institutional advisory firm website (static brochure site)",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node scripts/serve.js",
+    "serve": "node scripts/serve.js"
+  },
+  "engines": { "node": ">=18" }
+}
